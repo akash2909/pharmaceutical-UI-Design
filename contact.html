@@ -1,0 +1,161 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="css/navbar.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="fa/css/font-awesome.css"/>
+		<script src="js/contact.js"></script>
+		<style>
+			em{color:red;}
+		</style>
+		
+	</head>
+	
+	<body background="image/bodyimage.jpg">
+		<a href="home.html"><img src="image/logo.svg" id="logo"></a>
+		<span id="topright">
+			<a href="https://www.facebook.com/"><i class= "fa fa-facebook-square fa-2x blue"></i></a>
+			<a href="https://www.youtube.com/"><i class= "fa fa-youtube-square fa-2x red"></i></a>
+			<a href="https://www.twitter.com/"><i class= "fa fa-twitter-square fa-2x skyblue"></i></a>
+		</span>
+		<div class="container-fluid">
+			<!--nav start -->
+				<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">Pharmaceutical Company</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+				<li class="active"><a href="home.html">
+					<i class="fa fa-home"></i>Home</a></li>
+				<li><a href="about.html">
+					<i class="fa fa-user"></i>About</a></li>
+				<li><a href="contact.html">
+					<i class="fa fa-phone-square"></i>Contact</a></li>
+					
+		<!--drop down-->
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-product-hunt">Product</i>
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="product.html">Pharmaceutical drugs</a></li>
+					<li><a href="product.html">Healthcare</a></li>
+					<li><a href="product.html">Medical Supplies and Equipments</a></li>
+				</ul>
+			</li>		
+		<!-- dropdown end-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+				<li><a href="login.html">
+					<i class="fa fa-lock"></i>Admin Login</a>
+				</li>
+            </ul>
+          </div><!--nav-collapse -->
+        </div><!--container-fluid -->
+      </nav><!--nav end-->
+	</div>	
+	
+		<div class="container">
+			<div class="contactcolor">
+				<div class="row">
+				
+					<div class="col-sm-6">
+					<h3 class="text-center">Contact Us</h3><br>
+						<form action="home.html" method="POST" onsubmit="return pagetest()">
+						
+							<div class="row">
+								<div class="col-sm-3"><label>Full name<em>*</em></label></div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control input-sm" id="fname" name="fname"/>
+									<i id="nameerror"></i>
+								</div>
+							</div><!--1row end-->
+							<br>
+							<div class="row">
+								<div class="col-sm-3"><label>Mobile<em>*</em></label></div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control input-sm" id="mobile" name="mobile" maxlength="10"/>
+									<i id="mobileerror"></i>
+								</div>
+							</div><!--1row end-->
+							<br>
+							<div class="row">
+								<div class="col-sm-3"><label>Email<em>*</em></label></div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control input-sm" id="email" name="email"/>
+									<i id="emailerror"></i>
+								</div>
+							</div><!--1row end-->
+							<br>
+							<div class="row">
+								<div class ="col-sm-3"><label>Address<em>*</em></label></div>
+								<div class="col-sm-9">
+									<textarea class="form-control" id="address"></textarea>
+									<i id="addresserror"></i>
+								</div>
+							</div><!-- row end-->
+							
+							<br>
+							<div class="row">
+								<div class ="col-sm-3"><label>Pincode<em>*</em></label></div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="pincode" maxlength="6">
+									<i id="pincodeerror"></i>
+								</div>
+							</div><!-- row end-->
+
+							<br>
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<button type="submit" class="btn btn-primary">Register</button>
+									<button type="reset" class="btn btn-danger">clear</button>
+								</div>
+							</div><!--1row end-->
+						</form>
+					</div><!--6end-->
+					<div class="col-sm-6"><br><br><br><br>
+						<p class="text-center"><i class="fa fa-map-marker fa-2x"></i><br>
+					<b>Pharmaceutical Company</b><br>
+					Rukmini Knowledge Park,<br>
+					Kattigenahalli,Yelahanka,<br>
+					Bangalore - 560064.<br>
+				</p>
+				<p class="text-center">
+					<i class="fa fa-phone fa-2x"></i><br>
+					+91 9482551031
+				</p>
+				<p class="text-center">
+					<i class="fa fa-envelope fa-2x"></i><br>
+					mail.akash2909@gmail.com
+				</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			<div class="row myfooter">
+				<div class="col-sm-2">
+							<label>Find Us on:</label><br>
+							<a href="https://www.facebook.com/"><i class= "fa fa-facebook-square fa-2x blue"></i></a>
+							<a href="https://www.youtube.com/"><i class= "fa fa-youtube-square fa-2x red"></i></a>
+							<a href="https://www.twitter.com/"><i class= "fa fa-twitter-square fa-2x skyblue"></i></a>
+				</div>
+				<div class="col-sm-8">
+					<h4 class="text-center">
+						<label><br> All Right Reserved 2017 | Designed by AKASH</label>
+					</h4>
+				</div>
+				<div class="col-sm-2"></div>
+			</div><!--row end-->
+	</body>
+</html>
